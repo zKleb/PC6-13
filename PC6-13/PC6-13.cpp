@@ -9,13 +9,13 @@ using namespace std;
 
 int employeeCount();
 int missedDays(int&);
-double averageDays(int, int);
+//double averageDays(int, int);
 
 int main() {
-	int numOfEmployees = 0;
+	int count;
 
 	employeeCount();
-	missedDays(numOfEmployees);
+	missedDays(count);
 
 }
 
@@ -34,14 +34,19 @@ int employeeCount() {
 	return count;
 }
 
-int missedDays(int&) {
+int missedDays(int& count) {
+	int daysOut = 0;
+	
+	for (int i = 0; i < count; i++) {
+		cout << "Days out for employee " << i << ":" << endl;
+		cin >> daysOut;
+	}
 
-
-
+	return daysOut;
 }
-
+/*
 double averageDays(int x, int y) {
 
 
 
-}
+}*/
